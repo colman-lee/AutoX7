@@ -1,6 +1,5 @@
 package org.autojs.autojs.devplugin
 
-import android.annotation.SuppressLint
 import com.google.gson.JsonNull
 import com.google.gson.JsonObject
 import com.stardust.app.GlobalAppContext
@@ -14,9 +13,6 @@ import com.stardust.pio.PFiles
 import com.stardust.util.MD5
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.flow.catch
-import kotlinx.coroutines.flow.flow
-import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import org.autojs.autojs.Pref
