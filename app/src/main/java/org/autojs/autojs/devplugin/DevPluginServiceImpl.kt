@@ -1,17 +1,17 @@
 package org.autojs.autojs.devplugin
 
-import android.app.Service
 import android.content.Intent
 import android.os.IBinder
 import android.os.RemoteException
 import android.util.Log
+import com.stardust.app.service.AbstractAutoService
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import org.autojs.autojs.Pref
 import java.io.IOException
 
-class DevPluginServiceImpl : Service() {
+class DevPluginServiceImpl : AbstractAutoService() {
 
     companion object {
         private const val TAG = "DevPluginService"
