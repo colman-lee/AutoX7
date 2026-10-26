@@ -22,7 +22,6 @@ import org.autojs.autoxjs.R
 import org.mozilla.javascript.RhinoException
 import java.io.File
 import java.io.FileFilter
-import com.aiselp.autojs.codeeditor.EditActivity as EditActivity2
 import org.autojs.autojs.ui.edit.EditActivity as EditActivity1
 
 /**
@@ -87,11 +86,7 @@ object Scripts {
 
 
     fun edit(context: Context, file: ScriptFile) {
-        if (Pref.getEditor()) {
-            EditActivity2.editFile(context, file)
-        } else {
-            EditActivity1.editFile(context, file.simplifiedName, file.path, false)
-        }
+        EditActivity1.editFile(context, file.simplifiedName, file.path, false)
     }
 
     fun edit(context: Context, path: String) {
